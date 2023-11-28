@@ -1,1 +1,1 @@
-# example-ds-1
+# example-ks-styled-components
