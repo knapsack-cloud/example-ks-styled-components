@@ -1,0 +1,19 @@
+{
+  "globalAssetSetIds": ["brandA", "brandB"],
+  "allAssetSets": {
+    "brandA": {
+      "id": "brandA",
+      "title": "brandA",
+      "inlineCss": "",
+      "inlineJs": "document.body.setAttribute('data-theme', 'brandA');",
+      "assets": []
+    },
+    "brandB": {
+      "id": "brandB",
+      "title": "brandB",
+      "inlineCss": "",
+      "inlineJs": "document.body.setAttribute('data-theme', 'brandB');",
+      "assets": []
+    }
+  }
+}

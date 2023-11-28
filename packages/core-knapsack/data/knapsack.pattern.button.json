@@ -1,0 +1,37 @@
+{
+  "id": "button",
+  "title": "Button",
+  "description": "",
+  "statuses": {},
+  "templates": [
+    {
+      "id": "react-jVxnWDT5cw",
+      "title": "Button",
+      "path": "@my-org/core",
+      "alias": "Button",
+      "templateLanguageId": "react",
+      "spec": {
+        "isInferred": true
+      },
+      "demoIds": ["Df3af7RKNs"],
+      "blockIds": []
+    }
+  ],
+  "tabs": [
+    {
+      "type": "template",
+      "id": "react-jVxnWDT5cw"
+    },
+    {
+      "type": "subPage",
+      "id": "m6cDWS6kex"
+    }
+  ],
+  "subPages": [
+    {
+      "title": "Untitled",
+      "id": "m6cDWS6kex",
+      "blockIds": ["OWsGAiwjrO"]
+    }
+  ]
+}

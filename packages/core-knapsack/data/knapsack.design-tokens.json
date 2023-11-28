@@ -1,0 +1,24 @@
+{
+  "themes": {
+    "brandA": {
+      "primary": {
+        "$value": "#ff0000",
+        "$type": "color"
+      },
+      "secondary": {
+        "$value": "#8df480",
+        "$type": "color"
+      }
+    },
+    "brandB": {
+      "primary": {
+        "$value": "#07f5ac",
+        "$type": "color"
+      },
+      "secondary": {
+        "$value": "#ea22fb",
+        "$type": "color"
+      }
+    }
+  }
+}

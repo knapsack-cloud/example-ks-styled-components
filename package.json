@@ -1,0 +1,25 @@
+{
+  "name": "example-ds-1",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "lerna run build"
+  },
+  "keywords": [],
+  "author": "KnapsackBot 53622700+KnapsackBot@users.noreply.github.com",
+  "license": "ISC",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@typescript-eslint/parser": "^6.13.0",
+    "eslint": "^8.54.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-react": "^1.1.7",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-react": "^7.33.2",
+    "lerna": "^7.4.2",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^3.1.0"
+  }
+}

@@ -1,0 +1,14 @@
+byId:
+  button:
+    id: button
+    name: Button
+    parentId: components
+    path: /pattern/button
+  components:
+    id: components
+    name: Components
+    parentId: root
+    path: /pages/components
+order:
+  - components
+  - button

@@ -1,0 +1,17 @@
+{
+  "name": "@my-org/core-tokens",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/design-tokens.cjs",
+  "module": "dist/design-tokens.js",
+  "types": "dist/design-tokens.d.ts",
+  "scripts": {
+    "build": "knapsack --config ../core-knapsack/knapsack.config.js build:tokens"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@knapsack/app": "^4.34.0"
+  },
+  "author": "KnapsackBot 53622700+KnapsackBot@users.noreply.github.com",
+  "license": "ISC"
+}

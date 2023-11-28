@@ -1,0 +1,23 @@
+{
+  "name": "@my-org/core",
+  "version": "1.0.0",
+  "description": "",
+  "module": "dist/index.js",
+  "types": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch:js": "tsc --watch --preserveWatchOutput",
+    "start": "run-p watch:js"
+  },
+  "dependencies": {
+    "@my-org/core-tokens": "^1.0.0",
+    "react": "^18.2.0",
+    "styled-components": "^6.1.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.37",
+    "typescript": "^5.2.2"
+  },
+  "author": "KnapsackBot 53622700+KnapsackBot@users.noreply.github.com",
+  "license": "ISC"
+}

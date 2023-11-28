@@ -1,0 +1,23 @@
+{
+  "name": "@my-org/core-knapsack",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "knapsack build",
+    "start": "knapsack start",
+    "serve": "NODE_ENV=production knapsack serve",
+    "test": "knapsack test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "react": "^18.2.0",
+    "@types/react": "^18.2.37",
+    "typescript": "^5.2.2",
+    "@my-org/core": "^1.0.0",
+    "@my-org/core-tokens": "^1.0.0",
+    "@knapsack/app": "^4.34.0",
+    "@knapsack/renderer-react": "^4.34.0"
+  },
+  "author": "KnapsackBot 53622700+KnapsackBot@users.noreply.github.com",
+  "license": "ISC"
+}
