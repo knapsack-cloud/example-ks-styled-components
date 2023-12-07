@@ -3,6 +3,8 @@ import { join } from 'path';
 import { execSync } from 'child_process';
 import merge from 'deepmerge';
 
+import knapsackConfig from './knapsack.config';
+
 // The "sets" within Tokens Studio we want to combine
 const combos = [
   ['GSK', 'Theme-dark'],
@@ -12,7 +14,9 @@ const combos = [
 ];
 
 // Where we're going to dump everything
-const distFolder = join(__dirname, '../core-tokens/dist');
+const distFolder =
+  knapsackConfig.designTokens?.distDir ||
+  join(__dirname, '../core-tokens/dist');
 // Make sure it exists first
 mkdirSync(distFolder, { recursive: true });
 
