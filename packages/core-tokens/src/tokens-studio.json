@@ -58,15 +58,15 @@
       "value": "400",
       "type": "fontWeights"
     },
-    "28px": {
+    "twentyEightPx": {
       "value": "28",
       "type": "fontSizes"
     },
-    "16px": {
+    "sixteenPx": {
       "value": "16",
       "type": "fontSizes"
     },
-    "12px": {
+    "twelvePx": {
       "value": "12",
       "type": "fontSizes"
     },
@@ -92,7 +92,7 @@
         "type": "fontWeights"
       },
       "fontSize": {
-        "value": "{28px}",
+        "value": "{twentyEightPx}",
         "type": "fontSizes"
       },
       "lineHeight": {
@@ -110,7 +110,7 @@
         "type": "fontWeights"
       },
       "fontSize": {
-        "value": "{16px}",
+        "value": "{sixteenPx}",
         "type": "fontSizes"
       },
       "lineHeight": {
@@ -128,7 +128,7 @@
         "type": "fontWeights"
       },
       "fontSize": {
-        "value": "{12px}",
+        "value": "{twelvePx}",
         "type": "fontSizes"
       },
       "lineHeight": {
@@ -145,13 +145,17 @@
       "type": "lineHeights"
     },
     "Lh-16": {
-      "value": "16px",
+      "value": "sixteenPx",
       "type": "lineHeights"
     },
     "semantic": {
       "frame": {
         "dark": {
           "value": "{color.primary.01}",
+          "type": "color"
+        },
+        "light": {
+          "value": "{color.secondary.01}",
           "type": "color"
         }
       },
@@ -264,15 +268,15 @@
       "value": "400",
       "type": "fontWeights"
     },
-    "28px": {
+    "twentyEightPx": {
       "value": "28",
       "type": "fontSizes"
     },
-    "16px": {
+    "sixteenPx": {
       "value": "16",
       "type": "fontSizes"
     },
-    "12px": {
+    "twelvePx": {
       "value": "12",
       "type": "fontSizes"
     },
@@ -298,7 +302,7 @@
         "type": "fontWeights"
       },
       "fontSize": {
-        "value": "{28px}",
+        "value": "{twentyEightPx}",
         "type": "fontSizes"
       },
       "lineHeight": {
@@ -316,7 +320,7 @@
         "type": "fontWeights"
       },
       "fontSize": {
-        "value": "{16px}",
+        "value": "{sixteenPx}",
         "type": "fontSizes"
       },
       "lineHeight": {
@@ -334,7 +338,7 @@
         "type": "fontWeights"
       },
       "fontSize": {
-        "value": "{12px}",
+        "value": "{twelvePx}",
         "type": "fontSizes"
       },
       "lineHeight": {
@@ -351,7 +355,7 @@
       "type": "lineHeights"
     },
     "Lh-16": {
-      "value": "16px",
+      "value": "sixteenPx",
       "type": "lineHeights"
     },
     "semantic": {

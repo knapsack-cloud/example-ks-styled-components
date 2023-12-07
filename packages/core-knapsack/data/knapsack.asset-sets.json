@@ -1,18 +1,32 @@
 {
-  "globalAssetSetIds": ["brandA", "brandB"],
+  "globalAssetSetIds": ["gsk-dark", "gsk-light", "nucala-dark", "nucala-light"],
   "allAssetSets": {
-    "brandA": {
-      "id": "brandA",
-      "title": "brandA",
+    "gsk-dark": {
+      "id": "gsk-dark",
+      "title": "gsk-dark",
       "inlineCss": "",
-      "inlineJs": "document.body.setAttribute('data-theme', 'brandA');",
+      "inlineJs": "document.body.setAttribute('data-brand', 'gsk'); document.body.setAttribute('data-mode', 'dark');",
       "assets": []
     },
-    "brandB": {
-      "id": "brandB",
-      "title": "brandB",
+    "gsk-light": {
+      "id": "gsk-light",
+      "title": "gsk-light",
       "inlineCss": "",
-      "inlineJs": "document.body.setAttribute('data-theme', 'brandB');",
+      "inlineJs": "document.body.setAttribute('data-brand', 'gsk'); document.body.setAttribute('data-mode', 'light');",
+      "assets": []
+    },
+    "nucala-dark": {
+      "id": "nucala-dark",
+      "title": "nucala-dark",
+      "inlineCss": "",
+      "inlineJs": "document.body.setAttribute('data-brand', 'nucala'); document.body.setAttribute('data-mode', 'dark');",
+      "assets": []
+    },
+    "nucala-light": {
+      "id": "nucala-light",
+      "title": "nucala-light",
+      "inlineCss": "",
+      "inlineJs": "document.body.setAttribute('data-brand', 'nucala'); document.body.setAttribute('data-mode', 'light');",
       "assets": []
     }
   }

@@ -1,4 +1,4 @@
-import { readFileSync, mkdirSync, writeFileSync } from "fs";
+import { readFileSync, mkdirSync, writeFileSync, read } from "fs";
 import { join } from "path";
 import { execSync } from "child_process";
 import merge from "deepmerge";
@@ -37,7 +37,7 @@ function doTokensFiles(filePath: string) {
       // Now generate the Knapsack assets
       const assetsFolder = join(distFolder, tokenComboName);
       execSync(
-        `npx knapsack-build-tokens --src ${srcTokenFilePath} --dist ${assetsFolder}`,
+        `npx knapsack-build-tokens --src ${srcTokenFilePath} --dist ${assetsFolder} --src-format tokens-studio`,
         { stdio: "inherit" },
       );
     });

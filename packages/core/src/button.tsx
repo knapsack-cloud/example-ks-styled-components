@@ -1,10 +1,9 @@
-import React from 'react';
-import styled, { DefaultTheme } from 'styled-components';
+import React, { PropsWithChildren } from "react";
+import styled, { DefaultTheme } from "styled-components";
 
 // Button Component
 interface ButtonProps {
-  children: React.ReactNode;
-  type: 'primary' | 'secondary';
+  type: "primary" | "secondary";
 }
 
 const SButton = styled.button<
@@ -14,13 +13,13 @@ const SButton = styled.button<
 >`
   padding: 8px;
   background: ${(props) => {
-    return props.theme[props.type];
+    return props.theme.color.button.bg;
   }};
 `;
 
-export const Button: React.FC<ButtonProps> = ({
+export const Button = ({
   children,
-  type = 'primary',
-}: ButtonProps) => {
+  type = "primary",
+}: PropsWithChildren<ButtonProps>) => {
   return <SButton type={type}>{children}</SButton>;
 };
