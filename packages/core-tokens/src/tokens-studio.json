@@ -1,0 +1,470 @@
+{
+  "GSK": {
+    "color": {
+      "primary": {
+        "01": {
+          "value": "#F36633",
+          "type": "color"
+        }
+      },
+      "base": {
+        "white": {
+          "value": "#ffffff",
+          "type": "color"
+        },
+        "black": {
+          "value": "#000000",
+          "type": "color"
+        }
+      },
+      "neutral": {
+        "01": {
+          "value": "#f5f5f5",
+          "type": "color"
+        },
+        "02": {
+          "value": "#E6E6E6",
+          "type": "color"
+        },
+        "03": {
+          "value": "#B1B1B1",
+          "type": "color"
+        },
+        "04": {
+          "value": "#6C6C6C",
+          "type": "color"
+        },
+        "05": {
+          "value": "#222222",
+          "type": "color"
+        }
+      },
+      "secondary": {
+        "01": {
+          "value": "#F5EEE3",
+          "type": "color"
+        }
+      }
+    },
+    "Border radius": {
+      "value": "2",
+      "type": "borderRadius"
+    },
+    "Bold": {
+      "value": "700",
+      "type": "fontWeights"
+    },
+    "Regular": {
+      "value": "400",
+      "type": "fontWeights"
+    },
+    "28px": {
+      "value": "28",
+      "type": "fontSizes"
+    },
+    "16px": {
+      "value": "16",
+      "type": "fontSizes"
+    },
+    "12px": {
+      "value": "12",
+      "type": "fontSizes"
+    },
+    "Heading 2": {
+      "value": "Arial",
+      "type": "fontFamilies"
+    },
+    "Body text 1": {
+      "value": "Arial",
+      "type": "fontFamilies"
+    },
+    "Button label": {
+      "value": "Arial",
+      "type": "fontFamilies"
+    },
+    "Heading2": {
+      "fontFamily": {
+        "value": "{Heading 2}",
+        "type": "fontFamilies"
+      },
+      "fontWeight": {
+        "value": "{Bold}",
+        "type": "fontWeights"
+      },
+      "fontSize": {
+        "value": "{28px}",
+        "type": "fontSizes"
+      },
+      "lineHeight": {
+        "value": "{Lh-40}",
+        "type": "lineHeights"
+      }
+    },
+    "Body text1": {
+      "fontFamily": {
+        "value": "{Body text 1}",
+        "type": "fontFamilies"
+      },
+      "fontWeight": {
+        "value": "{Regular}",
+        "type": "fontWeights"
+      },
+      "fontSize": {
+        "value": "{16px}",
+        "type": "fontSizes"
+      },
+      "lineHeight": {
+        "value": "{Lh-24}",
+        "type": "lineHeights"
+      }
+    },
+    "Button": {
+      "fontFamily": {
+        "value": "{Button label}",
+        "type": "fontFamilies"
+      },
+      "fontWeight": {
+        "value": "{Regular}",
+        "type": "fontWeights"
+      },
+      "fontSize": {
+        "value": "{12px}",
+        "type": "fontSizes"
+      },
+      "lineHeight": {
+        "value": "{Lh-16}",
+        "type": "lineHeights"
+      }
+    },
+    "Lh-40": {
+      "value": "40px",
+      "type": "lineHeights"
+    },
+    "Lh-24": {
+      "value": "24px",
+      "type": "lineHeights"
+    },
+    "Lh-16": {
+      "value": "16px",
+      "type": "lineHeights"
+    },
+    "semantic": {
+      "frame": {
+        "dark": {
+          "value": "{color.primary.01}",
+          "type": "color"
+        }
+      },
+      "button": {
+        "bg": {
+          "primary-default": {
+            "on dark": {
+              "value": "{color.primary.01}",
+              "type": "color"
+            },
+            "on light": {
+              "value": "{color.base.white}",
+              "type": "color"
+            }
+          }
+        },
+        "label": {
+          "primary-default": {
+            "on dark": {
+              "value": "{color.base.white}",
+              "type": "color"
+            },
+            "on light": {
+              "value": "{color.primary.01}",
+              "type": "color"
+            }
+          }
+        }
+      },
+      "card": {
+        "bg": {
+          "value": "{color.base.white}",
+          "type": "color"
+        },
+        "title": {
+          "value": "{color.primary.01}",
+          "type": "color"
+        },
+        "description": {
+          "value": "{color.base.black}",
+          "type": "color"
+        }
+      }
+    }
+  },
+  "Nucala": {
+    "color": {
+      "primary": {
+        "01": {
+          "value": "#690613",
+          "type": "color"
+        },
+        "02": {
+          "value": "#95081A",
+          "type": "color"
+        },
+        "03": {
+          "value": "#D13239",
+          "type": "color"
+        }
+      },
+      "base": {
+        "white": {
+          "value": "#ffffff",
+          "type": "color"
+        },
+        "black": {
+          "value": "#000000",
+          "type": "color"
+        }
+      },
+      "neutral": {
+        "01": {
+          "value": "#f5f5f5",
+          "type": "color"
+        },
+        "02": {
+          "value": "#E6E6E6",
+          "type": "color"
+        },
+        "03": {
+          "value": "#B1B1B1",
+          "type": "color"
+        },
+        "04": {
+          "value": "#6C6C6C",
+          "type": "color"
+        },
+        "05": {
+          "value": "#222222",
+          "type": "color"
+        }
+      },
+      "secondary": {
+        "01": {
+          "value": "#F5EEE3",
+          "type": "color"
+        }
+      }
+    },
+    "Border radius": {
+      "value": "32",
+      "type": "borderRadius"
+    },
+    "Bold": {
+      "value": "700",
+      "type": "fontWeights"
+    },
+    "Regular": {
+      "value": "400",
+      "type": "fontWeights"
+    },
+    "28px": {
+      "value": "28",
+      "type": "fontSizes"
+    },
+    "16px": {
+      "value": "16",
+      "type": "fontSizes"
+    },
+    "12px": {
+      "value": "12",
+      "type": "fontSizes"
+    },
+    "Heading 2": {
+      "value": "Arial",
+      "type": "fontFamilies"
+    },
+    "Body text 1": {
+      "value": "Arial",
+      "type": "fontFamilies"
+    },
+    "Button label": {
+      "value": "Arial",
+      "type": "fontFamilies"
+    },
+    "Heading2": {
+      "fontFamily": {
+        "value": "{Heading 2}",
+        "type": "fontFamilies"
+      },
+      "fontWeight": {
+        "value": "{Bold}",
+        "type": "fontWeights"
+      },
+      "fontSize": {
+        "value": "{28px}",
+        "type": "fontSizes"
+      },
+      "lineHeight": {
+        "value": "{Lh-40}",
+        "type": "lineHeights"
+      }
+    },
+    "Body text1": {
+      "fontFamily": {
+        "value": "{Body text 1}",
+        "type": "fontFamilies"
+      },
+      "fontWeight": {
+        "value": "{Regular}",
+        "type": "fontWeights"
+      },
+      "fontSize": {
+        "value": "{16px}",
+        "type": "fontSizes"
+      },
+      "lineHeight": {
+        "value": "{Lh-24}",
+        "type": "lineHeights"
+      }
+    },
+    "Button": {
+      "fontFamily": {
+        "value": "{Button label}",
+        "type": "fontFamilies"
+      },
+      "fontWeight": {
+        "value": "{Regular}",
+        "type": "fontWeights"
+      },
+      "fontSize": {
+        "value": "{12px}",
+        "type": "fontSizes"
+      },
+      "lineHeight": {
+        "value": "{Lh-16}",
+        "type": "lineHeights"
+      }
+    },
+    "Lh-40": {
+      "value": "40px",
+      "type": "lineHeights"
+    },
+    "Lh-24": {
+      "value": "24px",
+      "type": "lineHeights"
+    },
+    "Lh-16": {
+      "value": "16px",
+      "type": "lineHeights"
+    },
+    "semantic": {
+      "frame": {
+        "dark": {
+          "value": "{color.primary.01}",
+          "type": "color"
+        },
+        "light": {
+          "value": "{color.secondary.01}",
+          "type": "color"
+        }
+      },
+      "button": {
+        "bg": {
+          "primary-default": {
+            "on dark": {
+              "value": "{color.primary.01}",
+              "type": "color"
+            },
+            "on light": {
+              "value": "{color.base.white}",
+              "type": "color"
+            }
+          }
+        },
+        "label": {
+          "primary-default": {
+            "on dark": {
+              "value": "{color.base.white}",
+              "type": "color"
+            },
+            "on light": {
+              "value": "{color.primary.01}",
+              "type": "color"
+            }
+          }
+        }
+      },
+      "card": {
+        "bg": {
+          "value": "{color.base.white}",
+          "type": "color"
+        },
+        "title": {
+          "value": "{color.primary.01}",
+          "type": "color"
+        },
+        "description": {
+          "value": "{color.base.black}",
+          "type": "color"
+        }
+      }
+    }
+  },
+  "Theme-dark": {
+    "color": {
+      "container": {
+        "frame": {
+          "value": "{semantic.frame.dark}",
+          "type": "color"
+        },
+        "title": {
+          "value": "{color.base.white}",
+          "type": "color"
+        },
+        "description": {
+          "value": "{color.base.white}",
+          "type": "color"
+        }
+      },
+      "button": {
+        "bg": {
+          "value": "{semantic.button.bg.primary-default.on light}",
+          "type": "color"
+        },
+        "label": {
+          "value": "{semantic.button.label.primary-default.on light}",
+          "type": "color"
+        }
+      }
+    }
+  },
+  "Theme-light": {
+    "color": {
+      "container": {
+        "frame": {
+          "value": "{semantic.frame.light}",
+          "type": "color"
+        },
+        "title": {
+          "value": "{color.base.black}",
+          "type": "color"
+        },
+        "description": {
+          "value": "{color.base.black}",
+          "type": "color"
+        }
+      },
+      "button": {
+        "bg": {
+          "value": "{semantic.button.bg.primary-default.on dark}",
+          "type": "color"
+        },
+        "label": {
+          "value": "{semantic.button.label.primary-default.on dark}",
+          "type": "color"
+        }
+      }
+    }
+  },
+  "$themes": [],
+  "$metadata": {
+    "tokenSetOrder": ["GSK", "Nucala", "Theme-dark", "Theme-light"]
+  }
+}
