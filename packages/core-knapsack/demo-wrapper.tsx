@@ -1,15 +1,15 @@
 import React, { PropsWithChildren } from 'react';
 import { ThemeProvider, DefaultTheme } from 'styled-components';
 
-import GskDark from '@my-org/core-tokens/dist/GSK-Theme-dark/design-tokens.nested.json';
-import GskLight from '@my-org/core-tokens/dist/GSK-Theme-light/design-tokens.nested.json';
-import NucalaDark from '@my-org/core-tokens/dist/Nucala-Theme-dark/design-tokens.nested.json';
-import NucalaLight from '@my-org/core-tokens/dist/Nucala-Theme-light/design-tokens.nested.json';
+import ArexvyDark from '@my-org/core-tokens/dist/arexvy-dark/design-tokens.nested.json';
+import ArexvyLight from '@my-org/core-tokens/dist/arexvy-light/design-tokens.nested.json';
+import NucalaDark from '@my-org/core-tokens/dist/nucala-dark/design-tokens.nested.json';
+import NucalaLight from '@my-org/core-tokens/dist/nucala-light/design-tokens.nested.json';
 
 const themeLookup = {
-  gsk: {
-    dark: GskDark,
-    light: GskLight,
+  arexvy: {
+    dark: ArexvyDark,
+    light: ArexvyLight,
   },
   nucala: {
     dark: NucalaDark,
@@ -23,7 +23,7 @@ function isBrandName(brandName: string): brandName is BrandNames {
 }
 type ModeNames = keyof (typeof themeLookup)[BrandNames];
 function isModeName(modeName: string): modeName is ModeNames {
-  return modeName in themeLookup.gsk;
+  return modeName in themeLookup.arexvy;
 }
 
 const brandName = document.body.getAttribute('data-brand');
@@ -39,7 +39,7 @@ if (!brandName || !isBrandName(brandName)) {
 if (!modeName || !isModeName(modeName)) {
   throw new Error(
     `Mode name "${modeName}" is not valid. Must be one of: ${Object.keys(
-      themeLookup.gsk
+      themeLookup.arexvy
     ).join(', ')}`
   );
 }

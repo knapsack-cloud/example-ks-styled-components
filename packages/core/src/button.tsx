@@ -1,9 +1,9 @@
-import React, { PropsWithChildren } from "react";
-import styled, { DefaultTheme } from "styled-components";
+import React, { PropsWithChildren } from 'react';
+import styled, { DefaultTheme } from 'styled-components';
 
 // Button Component
 interface ButtonProps {
-  type: "primary" | "secondary";
+  type: 'primary' | 'secondary';
 }
 
 const SButton = styled.button<
@@ -13,13 +13,13 @@ const SButton = styled.button<
 >`
   padding: 8px;
   background: ${(props) => {
-    return props.theme.color.button.bg;
+    return props.theme.color.semantic.button.bg['01'];
   }};
 `;
 
 export const Button = ({
   children,
-  type = "primary",
+  type = 'primary',
 }: PropsWithChildren<ButtonProps>) => {
   return <SButton type={type}>{children}</SButton>;
 };

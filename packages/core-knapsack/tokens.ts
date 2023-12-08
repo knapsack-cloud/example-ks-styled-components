@@ -2,15 +2,44 @@ import { readFileSync, mkdirSync, writeFileSync, read } from 'fs';
 import { join } from 'path';
 import { execSync } from 'child_process';
 import merge from 'deepmerge';
+import loKebabCase from 'lodash/kebabCase';
 
 import knapsackConfig from './knapsack.config';
 
 // The "sets" within Tokens Studio we want to combine
 const combos = [
-  ['GSK', 'Theme-dark'],
-  ['GSK', 'Theme-light'],
-  ['Nucala', 'Theme-dark'],
-  ['Nucala', 'Theme-light'],
+  {
+    name: 'arexvy-dark',
+    merge: [
+      'Design System/Global',
+      'Design System/Arexvy/Default',
+      'Design System/Arexvy/Dark',
+    ],
+  },
+  {
+    name: 'arexvy-light',
+    merge: [
+      'Design System/Global',
+      'Design System/Arexvy/Default',
+      'Design System/Arexvy/Light',
+    ],
+  },
+  {
+    name: 'nucala-dark',
+    merge: [
+      'Design System/Global',
+      'Design System/Nucala/Default',
+      'Design System/Nucala/Dark',
+    ],
+  },
+  {
+    name: 'nucala-light',
+    merge: [
+      'Design System/Global',
+      'Design System/Nucala/Default',
+      'Design System/Nucala/Light',
+    ],
+  },
 ];
 
 // Where we're going to dump everything
@@ -29,11 +58,11 @@ function doTokensFiles(filePath: string) {
     // For every set we need to combine
     combos.forEach((combo) => {
       // Make array of objects to merge
-      const mergeableObjects = combo.map((key) => jsonData[key]);
+      const mergeableObjects = combo.merge.map((key) => jsonData[key]);
       // Smash all together, deep
       const merged = merge.all(mergeableObjects);
       // Using the keys within the object, create a file name
-      const tokenComboName = combo.map((key) => key).join('-');
+      const tokenComboName = combo.name;
       const srcTokenFilePath = join(distFolder, `${tokenComboName}.json`);
       // Write out Tokens Studio JSON
       writeFileSync(srcTokenFilePath, JSON.stringify(merged, null, 2));

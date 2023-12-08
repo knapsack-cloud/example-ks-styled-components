@@ -1,18 +1,23 @@
 {
-  "globalAssetSetIds": ["gsk-dark", "gsk-light", "nucala-dark", "nucala-light"],
+  "globalAssetSetIds": [
+    "arexvy-dark",
+    "arexvy-light",
+    "nucala-dark",
+    "nucala-light"
+  ],
   "allAssetSets": {
-    "gsk-dark": {
-      "id": "gsk-dark",
-      "title": "gsk-dark",
+    "arexvy-dark": {
+      "id": "arexvy-dark",
+      "title": "arexvy-dark",
       "inlineCss": "",
-      "inlineJs": "document.body.setAttribute('data-brand', 'gsk'); document.body.setAttribute('data-mode', 'dark');",
+      "inlineJs": "document.body.setAttribute('data-brand', 'arexvy'); document.body.setAttribute('data-mode', 'dark');",
       "assets": []
     },
-    "gsk-light": {
-      "id": "gsk-light",
-      "title": "gsk-light",
+    "arexvy-light": {
+      "id": "arexvy-light",
+      "title": "arexvy-light",
       "inlineCss": "",
-      "inlineJs": "document.body.setAttribute('data-brand', 'gsk'); document.body.setAttribute('data-mode', 'light');",
+      "inlineJs": "document.body.setAttribute('data-brand', 'arexvy'); document.body.setAttribute('data-mode', 'light');",
       "assets": []
     },
     "nucala-dark": {
