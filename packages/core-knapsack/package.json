@@ -6,17 +6,23 @@
     "build": "knapsack build",
     "start": "knapsack start",
     "serve": "NODE_ENV=production knapsack serve",
-    "test": "knapsack test"
+    "test": "knapsack test",
+    "tokens": "ts-node tokens.ts"
   },
-  "dependencies": {},
+  "dependencies": {
+    "deepmerge": "^4.3.1",
+    "lodash": "^4.17.21",
+    "ts-node": "^10.9.1"
+  },
   "devDependencies": {
-    "react": "^18.2.0",
-    "@types/react": "^18.2.37",
-    "typescript": "^5.2.2",
+    "@knapsack/app": "^4.39.0",
+    "@knapsack/renderer-react": "^4.39.0",
     "@my-org/core": "^1.0.0",
     "@my-org/core-tokens": "^1.0.0",
-    "@knapsack/app": "^4.34.0",
-    "@knapsack/renderer-react": "^4.34.0"
+    "@types/node": "^20.10.3",
+    "@types/react": "^18.2.37",
+    "react": "^18.2.0",
+    "typescript": "^5.2.2"
   },
   "author": "KnapsackBot 53622700+KnapsackBot@users.noreply.github.com",
   "license": "ISC"

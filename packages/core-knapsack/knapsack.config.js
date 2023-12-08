@@ -19,6 +19,7 @@ module.exports = configureKnapsack({
     }),
   ],
   designTokens: {
+    targets: [],
     distDir: join(__dirname, '../core-tokens/dist'),
   },
   plugins: [],

@@ -10,7 +10,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@knapsack/app": "^4.34.0"
+    "@knapsack/app": "^4.39.0"
   },
   "author": "KnapsackBot 53622700+KnapsackBot@users.noreply.github.com",
   "license": "ISC"

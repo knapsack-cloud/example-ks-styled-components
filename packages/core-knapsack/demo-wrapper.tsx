@@ -1,23 +1,51 @@
-import React from 'react';
+import React, { PropsWithChildren } from 'react';
 import { ThemeProvider, DefaultTheme } from 'styled-components';
-import tokens from '@my-org/core-tokens/dist/design-tokens.nested.json';
 
-type ThemeNames = keyof typeof tokens.themes;
-function isThemeName(themeName: string): themeName is ThemeNames {
-  return themeName in tokens.themes;
+import ArexvyDark from '@my-org/core-tokens/dist/arexvy-dark/design-tokens.nested.json';
+import ArexvyLight from '@my-org/core-tokens/dist/arexvy-light/design-tokens.nested.json';
+import NucalaDark from '@my-org/core-tokens/dist/nucala-dark/design-tokens.nested.json';
+import NucalaLight from '@my-org/core-tokens/dist/nucala-light/design-tokens.nested.json';
+
+const themeLookup = {
+  arexvy: {
+    dark: ArexvyDark,
+    light: ArexvyLight,
+  },
+  nucala: {
+    dark: NucalaDark,
+    light: NucalaLight,
+  },
+};
+
+type BrandNames = keyof typeof themeLookup;
+function isBrandName(brandName: string): brandName is BrandNames {
+  return brandName in themeLookup;
 }
-const themeName = document.body.getAttribute('data-theme');
+type ModeNames = keyof (typeof themeLookup)[BrandNames];
+function isModeName(modeName: string): modeName is ModeNames {
+  return modeName in themeLookup.arexvy;
+}
 
-if (!themeName || !isThemeName(themeName)) {
+const brandName = document.body.getAttribute('data-brand');
+const modeName = document.body.getAttribute('data-mode');
+
+if (!brandName || !isBrandName(brandName)) {
   throw new Error(
-    `Theme name "${themeName}" is not valid. Must be one of: ${Object.keys(
-      tokens.themes
+    `Brand name "${brandName}" is not valid. Must be one of: ${Object.keys(
+      themeLookup
+    ).join(', ')}`
+  );
+}
+if (!modeName || !isModeName(modeName)) {
+  throw new Error(
+    `Mode name "${modeName}" is not valid. Must be one of: ${Object.keys(
+      themeLookup.arexvy
     ).join(', ')}`
   );
 }
 
-const theme: DefaultTheme = tokens.themes[themeName];
+const theme: DefaultTheme = themeLookup[brandName][modeName];
 
-export default ({ children }: { children: React.ReactNode }) => {
+export default ({ children }: PropsWithChildren<{}>) => {
   return <ThemeProvider theme={theme}>{children}</ThemeProvider>;
 };

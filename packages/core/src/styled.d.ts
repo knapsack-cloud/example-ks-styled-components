@@ -4,7 +4,20 @@ import 'styled-components';
 // and extend them!
 declare module 'styled-components' {
   export interface DefaultTheme {
-    primary: string;
-    secondary: string;
+    color: {
+      primary: {
+        '01': string;
+      };
+      base: {
+        white: string;
+      };
+      semantic: {
+        button: {
+          bg: {
+            '01': string;
+          };
+        };
+      };
+    };
   }
 }
